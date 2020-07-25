@@ -12,6 +12,7 @@ This is a small nodeJs application that let you:
 * MongoDb  
 * Passport
 * Mongoose
+* Bootstrap 4
 ## Setup  
 * Clone the app  
   `https://github.com/iliassh1/nodejs-login-system.git`  
