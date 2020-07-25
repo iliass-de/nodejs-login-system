@@ -1,10 +1,10 @@
 # Login system app
 
 ## Overview
-This is a small nodeJs application that let you to:
+This is a small nodeJs application that let you:
 * make registrations and store hashed passwords into a mongoDb database
 * authenticate and authorize users
-* Login and logout operations
+* make login and logout operations
 * view a secret page if the username and password are correct
 
 ## Tools
@@ -14,7 +14,7 @@ This is a small nodeJs application that let you to:
 * Mongoose
 ## Setup  
 * Clone the app  
-  `https://github.com/iliassh1/nodejs-login-system.git`
+  `https://github.com/iliassh1/nodejs-login-system.git`  
   `cd nodejs-login-system`
  * Install dependencies  
    `npm install`
