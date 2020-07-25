@@ -26,4 +26,4 @@ This is a small nodeJs application that let you to:
 * Command Line  
 `curl -v -d "userName=foo&password=bar" http://127.0.0.1:3000/login`
 ## Screenshots
-![alt text](/img/home.png)
+![alt text](https://github.com/iliassh1/nodejs-login-system/blob/master/public/img/home.png)
