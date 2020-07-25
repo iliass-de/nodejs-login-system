@@ -11,6 +11,7 @@ const express               = require("express"),
 
 mongoose.connect("mongodb://localhost/db_login");
 app.set('view engine', 'ejs');
+app.set('views', './views');
 app.use(bodyParser.urlencoded({extend:true}));
 app.use(require("express-session")({
     secret: "Hello here is the Login system project with passport",
@@ -27,16 +28,16 @@ passport.deserializeUser(user.deserializeUser());
 
 // Routes
 app.get("/", isLoggedOut,function (req, res) {
-    res.render("home");
+    res.render("home", {userLoggedIn: false});
 })
 
 app.get("/secret",isLoggedIn,function (req, res) {
-    res.render("secret");
+    res.render("secret", {userLoggedIn: true});
 })
 
 // Registration
 app.get("/register", isLoggedOut,function (req, res) {
-    res.render("register");
+    res.render("register", {userLoggedIn: false});
 })
 
 app.post("/register", isLoggedOut,function (req, res) {
@@ -54,7 +55,7 @@ app.post("/register", isLoggedOut,function (req, res) {
 
 //Login
 app.get("/login", isLoggedOut,function (req, res) {
-    res.render("login");
+    res.render("login", {userLoggedIn: false});
 })
 
 app.post("/login", passport.authenticate("local" , {successRedirect: "/secret", failureRedirect: "/login"}),function (req, res) {
