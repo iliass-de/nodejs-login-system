@@ -12,6 +12,9 @@ const express               = require("express"),
 mongoose.connect("mongodb://localhost/db_login");
 app.set('view engine', 'ejs');
 app.set('views', './views');
+// integrate public folder
+app.use(express.static(__dirname + '/public'));
+
 app.use(bodyParser.urlencoded({extend:true}));
 app.use(require("express-session")({
     secret: "Hello here is the Login system project with passport",

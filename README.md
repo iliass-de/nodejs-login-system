@@ -25,3 +25,5 @@ This is a small nodeJs application that let you to:
 `http://127.0.0.1:3000`
 * Command Line  
 `curl -v -d "userName=foo&password=bar" http://127.0.0.1:3000/login`
+## Screenshots
+![alt text](/img/home.png)

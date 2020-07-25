@@ -1,11 +1,14 @@
 <%- include('header'); -%>
 <%- include('menu'); -%>
-<h1>Login</h1>
 
-<form action="/login" METHOD="POST">
-    <input type="text" placeholder="Username" name="username"><br>
-    <input type="password" placeholder="Password" name="password"><br>
-    <button>Submit</button>
-</form>
+<div class="form">
+    <h1>Login</h1>
+    <form action="/login" METHOD="POST">
+        <input class="form-control" type="text" placeholder="Username" name="username"><br>
+        <input class="form-control" type="password" placeholder="Password" name="password"><br>
+        <button class="btn btn-outline-light">Login</button>
+    </form>
+</div>
+
 
 <%- include('footer'); -%>

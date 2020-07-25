@@ -1,0 +1,43 @@
+body{
+    background-image: url("/img/steve-harvey-U4wcrDteZ2Y-unsplash.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    filter: opacity(opacity: 30%);
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+.home{
+    margin-top: 2em;
+    text-align: center;
+    color: white;
+}
+.form {
+    text-align: center;
+    border: 1px solid white;
+    margin-top: 2em;
+    margin-left: 30em;
+    margin-right: 30em;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px #888888;
+    color: white;
+}
+
+.form input {
+    width: 90%;
+    margin-left: 1em;
+
+}
+.form button {
+    margin-top: 1em;
+    width: 150px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 2em;
+    color:white;
+}
+
+footer ul {
+    list-style:none;
+}
