@@ -26,7 +26,7 @@ passport.deserializeUser(user.deserializeUser());
 
 
 // Routes
-app.get("/", function (req, res) {
+app.get("/", isLoggedOut,function (req, res) {
     res.render("home");
 })
 
@@ -35,11 +35,11 @@ app.get("/secret",isLoggedIn,function (req, res) {
 })
 
 // Registration
-app.get("/register", function (req, res) {
+app.get("/register", isLoggedOut,function (req, res) {
     res.render("register");
 })
 
-app.post("/register", function (req, res) {
+app.post("/register", isLoggedOut,function (req, res) {
     user.register(new user({username: req.body.username}), req.body.password, function (err, user) {
         if (err){
             console.log(err)
@@ -53,7 +53,7 @@ app.post("/register", function (req, res) {
 })
 
 //Login
-app.get("/login", function (req, res) {
+app.get("/login", isLoggedOut,function (req, res) {
     res.render("login");
 })
 
@@ -72,6 +72,13 @@ function isLoggedIn(req,res,next){
         return next();
     }
     res.redirect("/login")
+}
+
+function isLoggedOut(req,res,next){
+    if(!req.isAuthenticated()){
+        return next();
+    }
+    res.redirect("/secret")
 }
 
 app.listen(port, () => {
