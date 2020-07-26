@@ -28,8 +28,8 @@ This is a small nodeJs application that let you:
 `curl -v -d "userName=foo&password=bar" http://127.0.0.1:3000/login`
 ## Screenshots
 * Home page  
-![alt text](https://github.com/iliassh1/nodejs-login-system/blob/master/public/img/home.png)  
+![alt text](https://github.com/iliassh1/nodejs-login-system/blob/master/public/img/home'.png)  
 * Login page  
-![alt text](https://github.com/iliassh1/nodejs-login-system/blob/master/public/img/login.png)  
+![alt text](https://github.com/iliassh1/nodejs-login-system/blob/master/public/img/login'.png)  
 * Secret page  
-![alt text](https://github.com/iliassh1/nodejs-login-system/blob/master/public/img/secret.png)
+![alt text](https://github.com/iliassh1/nodejs-login-system/blob/master/public/img/secret'.png)
